@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Work+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Crimson Pro', serif;
+}
+
+p, span, div, nav, button {
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* Navbar Styling */
+nav ul{
+    list-style: none;
+    margin-right: 40px;
+}
+
+nav ul::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 30px 20px;
+    float: right;
+}
+
+nav ul li a{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+button {
+    color: white;
+    border: none;
+    background: linear-gradient(
+0deg, #FF8367, tomato);
+    padding: 20px 52px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+
+.all-common{
+    padding: 0 120px;
+    margin: 50px 0;
+}
+
+.all-common::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.all-common p{
+    margin: 20px 0 30px;
+    color: #3E3E3E;
+}
+
+/* First Section Styling */
+
+.first-section .left,.first-section .right {
+    float: left;
+    width: 50%;
+}
+
+.first-section .left{
+    padding-top: 50px;
+}
+.first-section h1{
+    font-size: 65px;
+}
+
+.first-section h1 span{
+    font-family: 'Crimson Pro', serif;
+    color: #FF8367;   
+}
+
+.first-section img{
+    width: 100%;
+    max-width: 480px;
+    margin-left: 45px;
+}
+
+/* Second Section Styling */
+
+.second-section .left,.second-section .right {
+    float: left;
+    width: 50%;
+}
+
+.second-section h2{
+    font-size: 50px;
+}
+
+.second-section img{
+    width: 100%;
+    max-width: 480px;
+    margin-top: -70px;
+}
+
+.second-section .right{
+    padding-left: 45px;
+}
+
+/* Third Section Styling */
+
+.third-section{
+    background-color: #f8f9fc;
+    padding: 110px 0;
+}
+
+.third-section h2{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.third-section p{
+    margin-bottom: 20px;
+}
+
+.third-section span{
+    font-family: 'Crimson Pro', serif;
+    color: #FF8367;
+}
+
+.project-section{
+    text-align: center;
+}
+
+.project-section .left, .project-section .middle, .project-section .right{
+    display: inline-block;
+    width: 29%;
+    background-color: white;
+    padding: 12px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 10px grey;
+}
+
+.project-section h2{
+    font-size: 25px;
+    text-align: left;
+    margin: 15px 0 20px;
+}
+
+.project-section span{
+    color: black;
+}
+
+.project-section .left p,
+.project-section .middle p,
+.project-section .right p {
+    line-height: 1.4;
+}
+
+.project-section .left img,
+.project-section .middle img,
+.project-section .right img {
+    width: 100%;
+}
+
+/* Fourth Section Styling */
+
+.fourth-section{
+    background: url(shapes/Group_33094_1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 59%;
+    background-position: center;
+    margin: 90px auto;
+}
+
+.fourth-section h1{
+    color: white;
+    width: 67%;
+    font-size: 50px;
+    padding: 70px 0;
+    padding-left: 50px;
+    display: inline-block;
+}
+
+.fourth-section button{
+    transform: translateY(-5px);
+}
+
+.fourth-section .button-container-2{
+    display: inline;
+}
+
+/* Fifth Section Styling */
+
+.fifth-section{
+    text-align: center;
+    margin: 90px 0;
+}
+
+.fifth-section p{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.fifth-section h2{
+    font-size: 40px;
+}
+
+.icons img{
+    margin-top: 15px;
+    width: 35px;
+}
+
+.middle-img{
+    margin: 0 20px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 850px){
+    .all-common {
+        padding: 0 50px;
+    }
+
+    .first-section img{
+        margin-left: 10px;
+    }
+
+    .third-section{
+        padding: 60px 0;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .fourth-section {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 1130px){
+    .second-section img{
+        margin-top: auto;
+    }
+    .project-section span{
+        display: block;
+        color: black;
+    }
+    .project-section h2{
+        text-align: center;
+        margin: 5px 0 10px;
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .first-section .left,.first-section .right,
+    .second-section .left,.second-section .right {
+        float: none;
+        width: 100%;
+    }
+
+    .first-section .left{
+        padding-top: 0;
+    }
+
+    .first-section img,
+    .second-section img{
+        margin: auto;
+        display: block;
+    }
+
+    .first-section h1,.first-section p,
+    .second-section h2,.second-section p{
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .second-section h2{
+        margin: 15px 0 10px;
+    }
+
+    .second-section .right{
+        padding: 0;
+    }
+
+    .project-section .left,
+    .project-section .middle,
+    .project-section .right{
+        display: block;
+        width: 50%;
+        margin: 12px auto !important;
+    }
+
+    .fourth-section{
+        margin: 40px auto;
+    }
+
+    .fourth-section h1{
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .fourth-section .button-container-2{
+        display: block;
+        text-align: center;
+        padding-bottom: 17px;
+    }
+
+    .fifth-section{
+        margin: 20px;
+    }
+
+    .button-container{
+        text-align: center;
+        margin: -20px 0 30px;
+    }
+
+
+    nav{
+        text-align: center;
+    }
+
+    nav ul li {
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    
+    nav ul li{
+        display: block;
+        padding: 10px 0px;
+    }
+
+    nav ul{
+        margin: 0;
+    }
+    
+    .project-section .left,
+    .project-section .middle,
+    .project-section .right{
+        width: 70%;
+    }
+
+    .fifth-section h2{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .all-common {
+        padding: 0;
+    }
+
+    .project-section .left, .project-section .middle, .project-section .right {
+        width: 90%;
+    }
+
+    .fourth-section {
+        width: 100%;
+    }
+}
